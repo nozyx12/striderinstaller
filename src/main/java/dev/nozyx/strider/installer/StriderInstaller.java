@@ -24,13 +24,14 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class StriderInstaller {
+    public static final String VERSION = "1.0.1";
+
+    private static final Point[] mouseClickPoint = new Point[1];
+
     public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(new NimbusLookAndFeel());
         } catch (UnsupportedLookAndFeelException ignored) {}
-
-        final Point[] mouseClickPoint = new Point[1];
-        String VERSION = "1.0.0";
 
         JFrame frame = new JFrame("StriderInstaller v" + VERSION);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

@@ -9,8 +9,8 @@
         "artifact": {
           "path": "dev/nozyx/strider/striderloader/0.0.1/striderloader-0.0.1.jar",
           "url": "https://maven.nozyx.dev/dev/nozyx/strider/striderloader/0.0.1/striderloader-0.0.1.jar",
-          "sha1": "3786eb4f85e74d9c01869b4884d9561a88be88b1",
-          "size": 101230
+          "sha1": "ca479943c2641ad376c05f339e9444863b8bd0a2",
+          "size": 101228
         }
       }
     },
