@@ -1,0 +1,68 @@
+{
+  "id": "striderloader-0.0.2-pre-<launcherVersion>",
+  "inheritsFrom": "<launcherVersion>",
+  "type": "release",
+  "libraries": [
+    {
+      "name": "dev.nozyx.strider:striderloader:0.0.2-pre",
+      "downloads": {
+        "artifact": {
+          "path": "dev/nozyx/strider/striderloader/0.0.2-pre/striderloader-0.0.2-pre.jar",
+          "url": "https://maven.nozyx.dev/dev/nozyx/strider/striderloader/0.0.2-pre/striderloader-0.0.2-pre.jar",
+          "sha1": "969c2703808a0d2afddc59ca8d689b0da16ea42d",
+          "size": 102838
+        }
+      }
+    },
+    {
+      "name": "net.bytebuddy:byte-buddy:1.17.5",
+      "downloads": {
+        "artifact": {
+          "path": "net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar",
+          "url": "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy/1.17.5/byte-buddy-1.17.5.jar",
+          "sha1": "88450f120903b7e72470462cdbd2b75a3842223c",
+          "size": 8953594
+        }
+      }
+    },
+    {
+      "name": "net.bytebuddy:byte-buddy-agent:1.17.5",
+      "downloads": {
+        "artifact": {
+          "path": "net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar",
+          "url": "https://repo1.maven.org/maven2/net/bytebuddy/byte-buddy-agent/1.17.5/byte-buddy-agent-1.17.5.jar",
+          "sha1": "58f9507f5f28d1d3e7adfb4ec2fe37c29d332c9b",
+          "size": 365946
+        }
+      }
+    },
+    {
+      "name": "org.json:json:20250517",
+      "downloads": {
+        "artifact": {
+          "path": "org/json/json/20250517/json-20250517.jar",
+          "url": "https://repo1.maven.org/maven2/org/json/json/20250517/json-20250517.jar",
+          "sha1": "d67181bbd819ccceb929b580a4e2fcb0c8b17cd8",
+          "size": 82710
+        }
+      }
+    },
+    {
+      "name": "com.vdurmont:semver4j:3.1.0",
+      "downloads": {
+        "artifact": {
+          "path": "com/vdurmont/semver4j/3.1.0/semver4j-3.1.0.jar",
+          "url": "https://repo1.maven.org/maven2/com/vdurmont/semver4j/3.1.0/semver4j-3.1.0.jar",
+          "sha1": "0de1248f09dfe8df3b021c84e0642ee222cceb13",
+          "size": 27357
+        }
+      }
+    }
+  ],
+  "arguments": {
+    "jvm": [
+      "-javaagent:libraries/dev/nozyx/strider/striderloader/0.0.1/striderloader-0.0.1.jar=mcVersion=<mcVersion>,mcSide=client"
+    ],
+    "game": []
+  }
+}

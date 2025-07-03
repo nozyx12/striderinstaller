@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class StriderInstaller {
-    public static final String VERSION = "1.0.1";
+    public static final String VERSION = "1.0.2";
 
     private static final Point[] mouseClickPoint = new Point[1];
 
@@ -92,6 +92,7 @@ public class StriderInstaller {
         contentPanel.add(Box.createVerticalStrut(5));
 
         JComboBox<String> striderVersionBox = new JComboBox<>(new String[]{
+                "0.0.2-pre",
                 "0.0.1"
         });
         striderVersionBox.setFont(new Font("SansSerif", Font.PLAIN, 16));
@@ -262,7 +263,7 @@ public class StriderInstaller {
                     if (jsonFile.exists() && jsonFile.isFile()) validVersions.add(dirName);
                 }
 
-                validVersions.sort(String::compareTo);
+                validVersions.sort(Comparator.reverseOrder());
 
                 launcherVersionCombo.removeAllItems();
                 if (validVersions.isEmpty()) {
